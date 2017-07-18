@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use \Core\View;
 use \App\Auth;
+use App\Models\Menu;
 
 /**
  * Home controller
@@ -20,8 +21,11 @@ class Home extends \Core\Controller
      */
     public function indexAction()
     {
+        $menu = new Menu();
+
+        $meni = $menu->getVrsta();
         View::renderTemplate('Home/index.html', [
-            //'user' => Auth::getUser()
+            'meni' => $meni
         ]);
     }
 }
