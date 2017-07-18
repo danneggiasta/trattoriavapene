@@ -1,0 +1,33 @@
+<h3>Izmenite jelo</h3>
+
+<form action="/admin/updateJelo" method="post">
+	<label>Vrsta</label>
+	<select name="vrsta">
+<!-- 	{% set newArray = [] %}
+	{% for jelo in jelovnik %}
+		{%if jelo.vrsta not in newArray %}
+			<option value="{{ jelo.vrsta }}">{{ jelo.vrsta }}</option>
+			{% set newArray = newArray|merge([jelo.vrsta]) %}
+		{% endif %}
+	{% endfor %} -->
+		<option value="dorucak">dorucak</option>
+		<option value="predjela">predjela</option>
+		<option value="sendvici">sendvici</option>
+		<option value="salata">salata</option>
+		<option value="pizza">pizza</option>
+		<option value="desert">desert</option>
+		<option value="pasta">pasta</option>
+	</select>
+
+	<label>Jelo</label>
+	<input type="text" name="jelo" value="{{ jelovnik.jelo }}">
+
+	<label>Opis</label>
+	<input type="text" name="opis" value="{{ jelovnik.opis }}">
+
+	<label>Cena</label>
+	<input type="text" name="cena" value="{{ jelovnik.cena }}">
+
+	<input type="hidden" name="id" value="{{ jelovnik.id }}">
+	<input type="submit" name="submit" value="Submit">
+</form>

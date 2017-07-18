@@ -1,0 +1,518 @@
+body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0 !important;
+	padding: 0 !important;
+	overflow-x:hidden;
+}
+
+.wrapper {
+	overflow-x: hidden;
+}
+
+a {
+	transition: all 0.3s ease;
+	outline: none !important;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, i {
+	cursor: default !important;
+}
+
+h1,h2,h3,h5, .text-muted {
+	font-family: 'Kaushan Script', sans-serif
+}
+
+hr {
+	border-color: rgba(166, 157, 67, .7);
+	width: 35%;
+}
+
+.fa-phone {
+	color: #BC2024;
+	text-shadow: 1px 1px #333;
+	margin-right: 15px;
+}
+
+.fa-home {
+	color: #BC2024;
+	text-shadow: 1px 1px #333;
+	margin-right: 15px;
+}
+
+.fa-money {
+	color: rgba(166, 157, 67, 1);
+}
+
+.fa-facebook-square {
+	color: #3B5999;
+	font-size: 20px;
+}
+
+.fa-twitter-square {
+	color: #1DA1F2;
+	font-size: 20px;
+}
+
+.fa-instagram {
+	color: #FCB319;
+	font-size: 20px;
+}
+
+.fa-linkedin-square {
+	color: #007BB6;
+	font-size: 20px;
+}
+
+.fa-google-plus-square {
+	color: #D73D32;
+	font-size: 20px;
+}
+
+/* NAVIGACIJA 
+----------------------------------------------------------------------------------------------------
+*/
+
+.navbar-default
+{
+	border: 0;
+	background-color:#fff;
+	transition:all .35s;
+	font-family: 'Kaushan Script', sans-serif
+}
+
+.navbar-default .navbar-header .navbar-brand
+{
+	text-transform:uppercase;
+	font-weight:700;
+	color:#f05f40;
+	font-family: 'Kaushan Script', sans-serif
+}
+
+.navbar-default .navbar-header .navbar-brand:focus,.navbar-default .navbar-header .navbar-brand:hover
+{
+	color:#eb3812
+}
+
+.navbar-default .nav>li>a,.navbar-default .nav>li>a:focus
+{
+	text-transform:uppercase;
+	font-size:13px;
+	font-weight:700;
+	color:#222
+}
+
+.navbar-default .nav>li>a:focus:hover,.navbar-default .nav>li>a:hover
+{
+	color:#18BC9C
+}
+
+.navbar-default .nav>li.active>a,.navbar-default .nav>li.active>a:focus
+{
+	color:#fff!important;
+	background-color:rgba(166, 157, 67, 1);
+}
+
+.navbar-default .nav>li.active>a:focus:hover,.navbar-default .nav>li.active>a:hover
+{
+	background-color:transparent
+}
+
+@media(min-width:768px) {
+	.navbar-default
+	{
+		border-color:none;
+		background-color: transparent;
+	}
+	
+	.navbar-default .navbar-header .navbar-brand
+	{
+		color:rgba(255,255,255,.7)
+	}
+	
+	.navbar-default .navbar-header .navbar-brand:focus,.navbar-default .navbar-header .navbar-brand:hover
+	{
+		color:#fff
+	}
+	
+	.navbar-default .nav>li>a,.navbar-default .nav>li>a:focus
+	{
+		color:rgba(255,255,255,.7)
+	}
+	
+	.navbar-default .nav>li>a:focus:hover,.navbar-default .nav>li>a:hover
+	{
+		color:#fff
+	}
+	
+	.navbar-default.affix
+	{
+		border-color:rgba(166, 157, 67, .5);
+		background-color:rgba(51, 51, 51, .9)
+	}
+	
+	.navbar-default.affix .navbar-header .navbar-brand
+	{
+		font-size:14px;
+		color:#fff
+	}
+	
+	.navbar-default.affix .navbar-header .navbar-brand:focus,.navbar-default.affix .navbar-header .navbar-brand:hover
+	{
+		color:rgba(166, 157, 67, 1)
+	}
+	
+	.navbar-default.affix .nav>li>a,.navbar-default.affix .nav>li>a:focus
+	{
+		color:rgba(255,255,255,.7)
+	}
+	
+	.navbar-default.affix .nav>li>a:focus:hover,.navbar-default.affix .nav>li>a:hover
+	{
+		color:rgba(166, 157, 67, 1)
+	}
+}
+
+@media (max-width:768px) {
+	.navbar-default .navbar-header .navbar-brand
+	{
+		color:rgba(166, 157, 67, 1)
+	}
+	
+	.navbar-default .navbar-header .navbar-brand:focus,.navbar-default .navbar-header .navbar-brand:hover
+	{
+		color:rgba(166, 157, 67, 1);
+	}
+	
+	.navbar-default .nav>li>a,.navbar-default .nav>li>a:focus
+	{
+		color:#2C3E50
+	}
+	
+	.navbar-default .nav>li>a:focus:hover,.navbar-default .nav>li>a:hover
+	{
+		color:rgba(166, 157, 67, 1);
+	}
+	
+	.navbar-toggle
+	{
+		background:rgba(166, 157, 67, 1);
+		opacity: 0.8;
+	}
+	
+	.navbar-toggle:focus,.navbar-toggle:hover
+	{
+		background:rgba(166, 157, 67, 1)!important;
+		opacity: 1;
+	}
+	
+	.icon-bar
+	{
+		background:#fff!important
+	}
+
+	.social
+	{
+		display: none
+	}
+}
+
+
+
+/* KRAJ NAVIGACIJE
+----------------------------------------------------------------------------------------------------
+*/
+
+
+/* HEADER
+----------------------------------------------------------------------------------------------------
+*/
+
+#heder {
+	height: 100vh;
+	width: 100%;
+	display: table;
+}
+
+#heder .inner {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#heder .inner h1 {
+	font-size: 45px;
+	text-transform: uppercase;
+	color: #fff;
+	text-shadow: 1px 2px #333;
+	display: none;
+}
+
+#heder img {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+#heder .inner h2 {
+	font-size: 45px;
+	text-transform: uppercase;
+	color: #fff;
+	text-shadow: 1px 2px #333;
+}
+
+#heder .inner p {
+	font-size: 25px;
+	color: #fff;
+	text-shadow: 1px 2px #333;
+	text-transform: uppercase;
+}
+
+#heder .inner span {
+	font-size: 25px;
+	color: #fff;
+	text-shadow: 1px 2px #333;
+}
+
+/* END HEADER
+----------------------------------------------------------------------------------------------------
+*/
+
+/* O NAMA
+----------------------------------------------------------------------------------------------------
+*/
+
+#onama {
+	height: auto;
+	width: 100%;
+	padding: 85px 0 85px 0;
+}
+
+#onama h3 {
+	text-transform: uppercase;
+}
+
+#onama .text-muted {
+	font-size: 20px;
+	color: rgba(166, 157, 67, 1);
+	border-bottom: 1px solid rgba(166, 157, 67, .3);
+	padding-bottom: 8px;
+	width: 20%;
+	margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+	#onama .text-muted {
+
+	width: 70%;
+}
+
+}
+
+#onama .intro {
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	color: #666;
+	margin-top: 50px;
+}
+
+#onama .container {
+	padding: 45px 0 45px 0;
+}
+
+#onama .intro p:first-letter {
+	color: rgba(166, 157, 67, 1)
+}
+
+#onama .bry {
+	font-size: 17px;
+}
+
+/* O NAMA KRAJ
+----------------------------------------------------------------------------------------------------
+*/
+
+
+
+/* GALERIJA
+----------------------------------------------------------------------------------------------------
+*/
+#gallery {
+	border-top: 2px solid rgba(166, 157, 67, 1);
+	border-bottom: 2px solid rgba(166, 157, 67, 1)
+}
+
+#gallery .container-fluid {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#karusel .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-filter: grayscale(40%); /* Chrome, Safari, Opera */
+  filter: grayscale(40%);
+  transition: all .3s ease;
+}
+
+#karusel .item img:hover {
+	-webkit-filter: grayscale(1%); /* Chrome, Safari, Opera */
+    filter: grayscale(1%);
+}
+
+
+/* KRAJ GALERIJE
+----------------------------------------------------------------------------------------------------
+*/
+
+
+/* JELOVNIK
+----------------------------------------------------------------------------------------------------
+*/
+#menu {
+	height: auto;
+	color: #666;
+}
+
+#menu .container {
+	padding: 80px 0 80px 0;
+}
+
+#menu h3 {
+	text-transform: uppercase;
+}
+
+#menu h5 {
+	color: #666;
+	font-size: 24px;
+	text-align: left;
+	margin-bottom: 20px;
+	font-weight: bold;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(166, 157, 67, .5);
+	width: 60%;
+}
+
+@media screen (max-width: 768px) {
+	#menu h3 {
+		width: 100%;
+	}
+
+	#menu .text-muted {
+		width: 100%;
+	}
+}
+
+#menu .head {
+	font-size: 19px;
+	color: rgba(166, 157, 67, 1);
+}
+
+#menu .headBold {
+	font-weight: bold;
+	font-size: 19px;
+	color: rgba(166, 157, 67, 1);
+}
+
+#menu .price {
+	margin-bottom: 20px;
+	font-weight: bold;
+	color: #666;
+}
+
+#menu .text-muted {
+	font-size: 20px;
+	color: rgba(166, 157, 67, 1);
+	border-bottom: 1px solid rgba(166, 157, 67, .3);
+	padding-bottom: 8px;
+	width: 20%;
+	margin: 0 auto 50px auto;
+}
+/* KRAJ JELOVNIKA
+----------------------------------------------------------------------------------------------------
+*/
+
+
+
+/* LOKACIJA
+----------------------------------------------------------------------------------------------------
+*/
+#location {
+	width: 100%;
+	margin: 0 !important;
+}
+
+#location .container-fluid {
+	margin: 0;
+	padding-top: 60px;
+	width: 100%;
+}
+
+#location h3 {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#location .text-muted {
+	font-size: 20px;
+	color: rgba(166, 157, 67, 1);
+	border-bottom: 1px solid rgba(166, 157, 67, .3);
+	padding-bottom: 8px;
+	width: 20%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#map {
+	margin-top: 80px;
+    width: 100%;
+    height: 400px;
+}
+
+/* KRAJ LOKACIJE
+----------------------------------------------------------------------------------------------------
+*/
+
+
+
+
+/* FOOTER
+----------------------------------------------------------------------------------------------------
+*/
+
+footer {
+	height: 100px;
+	background: #333;
+	color: #fff;
+	text-align: center;
+}
+
+footer .container {
+	padding: 40px 0 40px 0;
+}
+
+footer a {
+	color: #fff;
+	font-size: 14px;
+}
+
+footer a:hover {
+	color: rgba(166, 157, 67, 1);
+	text-decoration: none;
+}
+
+footer a:hover, a:active, a:focus {
+	color: #fff;
+	text-decoration: none
+}
+
+footer .fa-copyright {
+	color: rgba(166, 157, 67, 1);
+}
+
+
+/* KRAJ FOOTERA
+----------------------------------------------------------------------------------------------------
+*/

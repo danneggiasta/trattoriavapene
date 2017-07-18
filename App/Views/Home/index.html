@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<section id="menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h3>Jelovnik</h3>
+                <p class="text-muted">Naša raznovrsna jela</p>
+            </div>
+        </div> <!-- KRAJ PRVOG REDA -->
+        <div class="row">
+            <div class="col-xs-6">
+            <h5>Doručak do 12h:</h5>
+            {% for value in meni %}
+            {% if value.vrsta == 'dorucak' %}
+                <p class="head">{{ value.jelo|e }}</p>
+                <p>{{ value.opis|e }}</p>
+                <p class="price"><i class="fa fa-money" aria-hidden="true"></i> {{ value.cena|e }}</p>
+            {% endif %}
+            {% endfor %}
+            </div>
+            <div class="col-xs-6">
+                <h5>Sendviči:</h5>            
+                {% for value in meni %}
+                    {% if value.vrsta == 'sendvici' %}
+                        <p class="head">{{ value.jelo|e }}</p> 
+                        <p>{{ value.opis|e }}</p>
+                        <p class="price"><i class="fa fa-money" aria-hidden="true"></i> {{ value.cena|e }}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <h5>Topla i hladna predjela:</h5>
+                    {% for value in meni %}
+                        {% if value.vrsta == 'predjela' %}
+                            <p class="head">{{ value.jelo|e }}</p> 
+                            <p>{{ value.opis|e }}</p>
+                            <p class="price"><i class="fa fa-money" aria-hidden="true"></i> {{ value.cena|e }}</p>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <div class="col-xs-6">
+                    <h5>Obrok salate:</h5>
+                    {% for value in meni %}
+                        {% if value.vrsta == 'salata' %}
+                            <p class="head">{{ value.jelo|e }}</p> 
+                            <p>{{ value.opis|e }}</p>
+                            <p class="price"><i class="fa fa-money" aria-hidden="true"></i> {{ value.cena|e }}</p>
+                        {% endif %}
+                {% endfor %}
+                </div>
+                </div> 
+                <div class="row">
+                    <div class="col-xs-6">
+                        <h5>Paste:</h5>
+                        {% for value in meni %}
+                            {% if value.vrsta == 'pasta' %}
+                                <p class="head">{{ value.jelo|e }}</p> 
+                                <p>{{ value.opis|e }}</p>
+                                <p class="price"><i class="fa fa-money" aria-hidden="true"></i> {{ value.cena|e }}</p>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    <div class="col-xs-6">
+                        <h5>Pizza: (22cm/32cm)</h5>
+                        {% for value in meni %}
+                            {% if value.vrsta == 'pizza' %}
+                                <p class="head">{{ value.jelo|e }}</p> 
+                                <p>{{ value.opis|e }}</p>
+                                <p class="price"><i class="fa fa-money" aria-hidden="true"></i> {{ value.cena|e }}</p>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    <div class="col-xs-6">
+                        <h5>Deserti:</h5>
+                        {% for value in meni %}
+                            {% if value.vrsta == 'desert' %}
+                                <p class="head">{{ value.jelo|e }}</p> 
+                                <p>{{ value.opis|e }}</p>
+                                <p class="price"><i class="fa fa-money" aria-hidden="true"></i> {{ value.cena|e }}</p>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div> <!-- KRAJ REDA -->
+    </div> <!-- KRAJ KONTEJNERA -->
+</section> <!-- KRAJ JELOVNIKA -->
+
+{% endblock %}

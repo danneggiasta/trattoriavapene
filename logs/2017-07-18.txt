@@ -1,0 +1,121 @@
+[18-Jul-2017 04:29:15 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\tratt\public\index.php(41): Core\Router->dispatch('asdads')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\tratt\Core\Router.php' on line 130
+[18-Jul-2017 04:31:43 Europe/Berlin] Uncaught exception: 'Exception' with message 'Method addjeloAction not found in controller App\Controllers\Admin'
+Stack trace: #0 C:\xampp\htdocs\tratt\Core\Router.php(121): Core\Controller->__call('addjelo', Array)
+#1 C:\xampp\htdocs\tratt\public\index.php(41): Core\Router->dispatch('admin/addjelo')
+#2 {main}
+Thrown in 'C:\xampp\htdocs\tratt\Core\Controller.php' on line 55
+[18-Jul-2017 04:31:43 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\tratt\public\index.php(41): Core\Router->dispatch('admin/assets/cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\tratt\Core\Router.php' on line 130
+[18-Jul-2017 04:31:43 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\tratt\public\index.php(41): Core\Router->dispatch('admin/assets/cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\tratt\Core\Router.php' on line 130
+[18-Jul-2017 04:31:43 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\tratt\public\index.php(41): Core\Router->dispatch('admin/assets/cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\tratt\Core\Router.php' on line 130
+[18-Jul-2017 04:31:43 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\tratt\public\index.php(41): Core\Router->dispatch('admin/assets/cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\tratt\Core\Router.php' on line 130
+[18-Jul-2017 04:31:43 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\tratt\public\index.php(41): Core\Router->dispatch('admin/assets/cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\tratt\Core\Router.php' on line 130
+[18-Jul-2017 04:31:43 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\tratt\public\index.php(41): Core\Router->dispatch('admin/assets/js...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\tratt\Core\Router.php' on line 130
+[18-Jul-2017 04:31:43 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\tratt\public\index.php(41): Core\Router->dispatch('admin/assets/js...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\tratt\Core\Router.php' on line 130
+[18-Jul-2017 04:31:43 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\tratt\public\index.php(41): Core\Router->dispatch('admin/assets/js...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\tratt\Core\Router.php' on line 130
+[18-Jul-2017 04:31:43 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\tratt\public\index.php(41): Core\Router->dispatch('admin/assets/js...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\tratt\Core\Router.php' on line 130
+[18-Jul-2017 04:31:43 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\tratt\public\index.php(41): Core\Router->dispatch('admin/assets/im...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\tratt\Core\Router.php' on line 130
+[18-Jul-2017 04:31:43 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\tratt\public\index.php(41): Core\Router->dispatch('admin/assets/im...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\tratt\Core\Router.php' on line 130
+[18-Jul-2017 04:31:43 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\tratt\public\index.php(41): Core\Router->dispatch('admin/assets/im...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\tratt\Core\Router.php' on line 130
+[18-Jul-2017 04:31:43 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\tratt\public\index.php(41): Core\Router->dispatch('admin/assets/im...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\tratt\Core\Router.php' on line 130
+[18-Jul-2017 04:31:43 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\tratt\public\index.php(41): Core\Router->dispatch('admin/assets/im...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\tratt\Core\Router.php' on line 130
+[18-Jul-2017 04:31:43 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\tratt\public\index.php(41): Core\Router->dispatch('admin/assets/im...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\tratt\Core\Router.php' on line 130
+[18-Jul-2017 04:31:43 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\tratt\public\index.php(41): Core\Router->dispatch('admin/assets/im...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\tratt\Core\Router.php' on line 130
+[18-Jul-2017 04:31:43 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\tratt\public\index.php(41): Core\Router->dispatch('admin/assets/im...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\tratt\Core\Router.php' on line 130
+[18-Jul-2017 04:31:43 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\tratt\public\index.php(41): Core\Router->dispatch('admin/assets/im...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\tratt\Core\Router.php' on line 130
+[18-Jul-2017 04:31:44 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\tratt\public\index.php(41): Core\Router->dispatch('admin/assets/im...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\tratt\Core\Router.php' on line 130
+[18-Jul-2017 04:31:44 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\tratt\public\index.php(41): Core\Router->dispatch('admin/assets/im...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\tratt\Core\Router.php' on line 130
+[18-Jul-2017 04:31:44 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\tratt\public\index.php(41): Core\Router->dispatch('admin/assets/im...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\tratt\Core\Router.php' on line 130
+[18-Jul-2017 04:31:44 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\tratt\public\index.php(41): Core\Router->dispatch('admin/assets/im...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\tratt\Core\Router.php' on line 130
+[18-Jul-2017 04:31:44 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\tratt\public\index.php(41): Core\Router->dispatch('admin/assets/im...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\tratt\Core\Router.php' on line 130
+[18-Jul-2017 04:31:44 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\tratt\public\index.php(41): Core\Router->dispatch('admin/assets/im...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\tratt\Core\Router.php' on line 130
+[18-Jul-2017 04:31:44 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\tratt\public\index.php(41): Core\Router->dispatch('admin/assets/im...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\tratt\Core\Router.php' on line 130
+[18-Jul-2017 04:31:44 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\tratt\public\index.php(41): Core\Router->dispatch('admin/assets/im...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\tratt\Core\Router.php' on line 130
+[18-Jul-2017 04:36:03 Europe/Berlin] Uncaught exception: 'Error' with message 'Call to undefined method App\Models\Menu::getDB()'
+Stack trace: #0 C:\xampp\htdocs\tratt\App\Controllers\Admin.php(25): App\Models\Menu->getVrsta()
+#1 [internal function]: App\Controllers\Admin->indexAction()
+#2 C:\xampp\htdocs\tratt\Core\Controller.php(51): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\tratt\Core\Router.php(121): Core\Controller->__call('index', Array)
+#4 C:\xampp\htdocs\tratt\public\index.php(41): Core\Router->dispatch('admin')
+#5 {main}
+Thrown in 'C:\xampp\htdocs\tratt\App\Models\Menu.php' on line 18
