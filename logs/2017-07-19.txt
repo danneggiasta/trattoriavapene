@@ -1,0 +1,14 @@
+[19-Jul-2017 02:48:37 Europe/Berlin] Uncaught exception: 'ErrorException' with message 'getimagesize(): Read error!'
+Stack trace: #0 [internal function]: Core\Error::errorHandler(8, 'getimagesize():...', 'C:\\xampp\\htdocs...', 27, Array)
+#1 C:\xampp\htdocs\tratt\App\Models\Image.php(27): getimagesize('C:\\xampp\\tmp\\ph...')
+#2 C:\xampp\htdocs\tratt\App\Controllers\Admin.php(43): App\Models\Image->uploadImage()
+#3 [internal function]: App\Controllers\Admin->uploadImagesAction()
+#4 C:\xampp\htdocs\tratt\Core\Controller.php(51): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\tratt\Core\Router.php(121): Core\Controller->__call('uploadImages', Array)
+#6 C:\xampp\htdocs\tratt\public\index.php(43): Core\Router->dispatch('admin/uploadIma...')
+#7 {main}
+Thrown in 'C:\xampp\htdocs\tratt\App\Models\Image.php' on line 27
+[19-Jul-2017 05:23:11 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Images not found'
+Stack trace: #0 C:\xampp\htdocs\tratt\public\index.php(43): Core\Router->dispatch('images/asdasdas...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\tratt\Core\Router.php' on line 127

@@ -5,6 +5,7 @@ namespace App\Controllers;
 use \Core\View;
 use \App\Auth;
 use App\Models\Menu;
+use App\Models\Image;
 
 /**
  * Home controller
@@ -22,10 +23,14 @@ class Home extends \Core\Controller
     public function indexAction()
     {
         $menu = new Menu();
+        $gal = new Image();
+
+        $gallery = $gal->getImages();
 
         $meni = $menu->getVrsta();
         View::renderTemplate('Home/index.html', [
-            'meni' => $meni
+            'meni' => $meni,
+            'gallery' => $gallery
         ]);
     }
 }

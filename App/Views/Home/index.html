@@ -90,3 +90,15 @@
 </section> <!-- KRAJ JELOVNIKA -->
 
 {% endblock %}
+
+{% block gallery %}
+<section id="gallery">
+    <div class="container-fluid">
+        <div id="karusel">
+        {% for img in gallery %}
+            <div class="item"><img src="assets/img/owl/{{ img.image }}" alt="Owl Image"></div>
+        {% endfor %}
+        </div>
+    </div> <!-- KRAJ KONTEJNERA -->
+</section> <!-- KRAJ SEKCIJE GALERIJA -->
+{% endblock %}

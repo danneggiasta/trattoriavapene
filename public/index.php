@@ -36,6 +36,7 @@ $router->add('', ['controller' => 'Home', 'action' => 'index']);
 $router->add('login', ['controller' => 'Login', 'action' => 'new']);
 $router->add('logout', ['controller' => 'Login', 'action' => 'destroy']);
 $router->add('admin', ['controller' => 'Admin', 'action' => 'index']);
+$router->add('images', ['controller' => 'Admin', 'action' => 'images']);
 $router->add('{controller}/{action}/{id:\d+}');
 $router->add('{controller}/{action}');
 

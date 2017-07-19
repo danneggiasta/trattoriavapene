@@ -44,13 +44,6 @@ class Menu extends \Core\Model
 
 		return $jelo;
 
-		// try {
-		// 	$jelo = $this->db->get('jelovnik', ['id', '=' , $id]);
-
-		// 	return $jelo->first();
-		// } catch (PDOException $e) {
-		// 	echo $e->getMessage();
-		// }
 	}
 
 	public function add($vrsta, $jelo, $opis, $cena)
@@ -68,19 +61,6 @@ class Menu extends \Core\Model
 		$stmt->bindValue(':cena', $cena, PDO::PARAM_STR);
 
 		return $stmt->execute();
-		// try {
-
-		// 	return $this->db->insert('jelovnik', array(
-		// 		'vrsta' => $vrsta,
-		// 		'jelo'  => $jelo,
-		// 		'opis'  => $opis,
-		// 		'cena'  => $cena
-		// 	));
-
-			
-		// } catch (PDOException $e) {
-		// 	echo $e->getMessage();
-		// }
 	}
 
 	public function delete($id)
@@ -94,11 +74,6 @@ class Menu extends \Core\Model
 		$stmt->bindValue(':id', $id, PDO::PARAM_INT);
 
 		return $stmt->execute();
-		// try {
-		// 	return $this->db->delete('jelovnik', ['id', '=', $id]);
-		// } catch (PDOException $e) {
-		// 	echo $e->getMessage();
-		// }
 	}
 
 	public function update($id, $vrsta, $jelo, $opis, $cena)
@@ -116,15 +91,5 @@ class Menu extends \Core\Model
 		$stmt->bindValue(':cena', $cena, PDO::PARAM_STR);
 
 		return $stmt->execute();
-		// try {
-		// 	return $this->db->update('jelovnik', $id, array(
-		// 		'vrsta' => $vrsta,
-		// 		'jelo'  => $jelo,
-		// 		'opis'  => $opis,
-		// 		'cena'  => $cena
-		// 	));
-		// } catch (PDOException $e) {
-		// 	echo $e->getMessage();
-		// }
 	}
 }

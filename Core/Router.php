@@ -121,13 +121,19 @@ class Router
                     $controller_object->$action();
 
                 } else {
-                    throw new \Exception("Method $action (in controller $controller) not found");
+                    // throw new \Exception("Method $action (in controller $controller) not found");
+                    header('Location: /');
+                exit;
                 }
             } else {
-                throw new \Exception("Controller class $controller not found");
+                // throw new \Exception("Controller class $controller not found");
+                header('Location: /');
+                exit;
             }
         } else {
-            throw new \Exception('No route matched.', 404);
+            // throw new \Exception('No route matched.', 404);
+            header('Location: /');
+            exit;
         }
     }
 

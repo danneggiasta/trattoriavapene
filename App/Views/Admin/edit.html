@@ -1,33 +1,41 @@
-<h3>Izmenite jelo</h3>
+{% extends "adminbase.html" %}
+{% block body %}
+<div class="container">
+	<h3>Izmenite jelo</h3>
+	<hr>
+	<form action="/admin/updateJelo" method="post">
+		<div class="form-group">
+			<label>Vrsta</label>
+			<select class="form-control" name="vrsta">
+		<!-- 	{% set newArray = [] %}
+			{% for jelo in jelovnik %}
+				{%if jelo.vrsta not in newArray %}
+					<option value="{{ jelo.vrsta }}">{{ jelo.vrsta }}</option>
+					{% set newArray = newArray|merge([jelo.vrsta]) %}
+				{% endif %}
+			{% endfor %} -->
+				<option value="dorucak">dorucak</option>
+				<option value="predjela">predjela</option>
+				<option value="sendvici">sendvici</option>
+				<option value="salata">salata</option>
+				<option value="pizza">pizza</option>
+				<option value="desert">desert</option>
+				<option value="pasta">pasta</option>
+			</select>
 
-<form action="/admin/updateJelo" method="post">
-	<label>Vrsta</label>
-	<select name="vrsta">
-<!-- 	{% set newArray = [] %}
-	{% for jelo in jelovnik %}
-		{%if jelo.vrsta not in newArray %}
-			<option value="{{ jelo.vrsta }}">{{ jelo.vrsta }}</option>
-			{% set newArray = newArray|merge([jelo.vrsta]) %}
-		{% endif %}
-	{% endfor %} -->
-		<option value="dorucak">dorucak</option>
-		<option value="predjela">predjela</option>
-		<option value="sendvici">sendvici</option>
-		<option value="salata">salata</option>
-		<option value="pizza">pizza</option>
-		<option value="desert">desert</option>
-		<option value="pasta">pasta</option>
-	</select>
+			<label>Jelo</label>
+			<input class="form-control" type="text" name="jelo" value="{{ jelovnik.jelo }}">
 
-	<label>Jelo</label>
-	<input type="text" name="jelo" value="{{ jelovnik.jelo }}">
+			<label>Opis</label>
+			<input class="form-control" type="text" name="opis" value="{{ jelovnik.opis }}">
 
-	<label>Opis</label>
-	<input type="text" name="opis" value="{{ jelovnik.opis }}">
+			<label>Cena</label>
+			<input class="form-control" type="text" name="cena" value="{{ jelovnik.cena }}">
+		</div>
+		<input type="hidden" name="id" value="{{ jelovnik.id }}">
+		<input class="btn btn-default" type="submit" name="submit" value="Submit">
+	
+	</form>
+</div>
 
-	<label>Cena</label>
-	<input type="text" name="cena" value="{{ jelovnik.cena }}">
-
-	<input type="hidden" name="id" value="{{ jelovnik.id }}">
-	<input type="submit" name="submit" value="Submit">
-</form>
+{% endblock %}
