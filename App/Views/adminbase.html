@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin</title>
+    <link rel="stylesheet" href="{{ absolute_url }}/assets/css/bootstrap.min.css"> 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+</head>
+<body>
+<div class="wrapper">
+
+<!-- Static navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Trattoria Vapene</a>
+    </div>
+    <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li><a href="/admin">HOME</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="/images">Upload Images</a></li>
+            <li><a href="/logout">Log out</a></li>
+        </ul>
+    </div><!--/.nav-collapse -->
+</div><!--/.container-fluid -->
+</nav>
+
+<div class="wrapper">
+    {% for message in flash_messages %}
+    <!-- <div class="alert"> -->
+    <div class="alert alert-{{ message.type }}">
+        {{ message.body }}
+    </div>
+    {% endfor %}
+    
+	{% block body %}
+	{% endblock %}	
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="{{ absolute_url }}/assets/js/bootstrap.min.js"></script>
+
+</body>
+</html>
