@@ -59,9 +59,8 @@ class Admin extends Authenticated
                 $this->redirect('/images');
             }
             // Allow certain file formats
-            if($image_file_type != "jpg" && $image_file_type != "png" && $image_file_type != "jpeg"
-            && $image_file_type != "gif" ) {
-                Flash::addMessage('Sorry, only JPG, JPEG, PNG & GIF files are allowed.');
+            if($image_file_type != "jpg" && $image_file_type != "png" && $image_file_type != "jpeg") {
+                Flash::addMessage('Sorry, only JPG, JPEG & PNG files are allowed.');
                 $uploadOk = 0;
                 $this->redirect('/images');
             }
