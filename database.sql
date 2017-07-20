@@ -173,7 +173,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password_hash`) VALUES
-(3, 'Nebojsa Zlatanovic', 'zlatanovic.nebojsa@yahoo.com', '$2y$10$y1j1YjbEcr9yL9dM96eFYu5P.si/9bdgl57xd3MH2.z6J6TWu3Mw6');
+(3, 'Igor', 'vapenskiigor@trat.com', '$2y$10$y1j1YjbEcr9yL9dM96eFYu5P.si/9bdgl57xd3MH2.z6J6TWu3Mw6');
 
 --
 -- Indexes for dumped tables
